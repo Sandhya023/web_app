@@ -45,4 +45,16 @@ yarn add react-router-dom
 
 ```ruby
 npm install react-semantic-ui semantic-ui-css
+yarn add react-semantic-ui semantic-ui-css
+```
+
+When we click on submit we want to make a synchronous request to the server and to do that in Redux we use Redux thunk. We need to setup Redux. Go to the terminal and type-
+```ruby
+yarn add redux react-redux redux-thunk
+```
+### Install redux dev tool
+```
+npm install --save redux-devtools-extension
+yarn add --dev redux-devtools-extension
+
 ```

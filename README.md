@@ -45,4 +45,52 @@ yarn add react-router-dom
 
 ```ruby
 npm install react-semantic-ui semantic-ui-css
+yarn add react-semantic-ui semantic-ui-css
 ```
+
+When we click on submit we want to make a synchronous request to the server and to do that in Redux we use Redux thunk. We need to setup Redux. Go to the terminal and type-
+```ruby
+yarn add redux react-redux redux-thunk
+```
+### Install redux dev tool
+```
+npm install --save redux-devtools-extension
+yarn add --dev redux-devtools-extension
+
+```
+
+### Add axios in api.js
+```
+yarn add axios
+```
+
+### Node backend server application
+We will do backend with express framework. Make a directory named book-api.
+Install express in the folder-
+```
+	npm  install express
+```
+
+React is making request to localhost 3000 but our api is 8080 so create a proxy. 
+
+## Package.json of book-api with express
+
+```ruby
+{
+  "name": "book-api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec babel-node -- src/index.js"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "nodemon": "^1.19.0"
+  }
+}
+
+
+```
+
